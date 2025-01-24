@@ -1,0 +1,312 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+@font-face {
+    font-family: ff;
+    src: url(../fonts/Montserrat-Light.ttf);
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url(../img/morning.jpg); */
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: saturation;
+    color: white!important;
+    >.mainBox{
+
+        width: 80%;
+        height: 60%;
+        display: flex;
+        flex-wrap: nowrap;
+        /* border: 3px dashed white; */
+        >.leftBox{
+            /* backdrop-filter: blur(5px); */
+            /* border-top-left-radius: 15px; */
+            /* border-bottom-left-radius: 15px; */
+            width: 55%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            gap: 10px;
+            padding-left: 65px;
+            >.greeting-txt{
+                width: 100%;
+                height: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 20px;
+                margin-top: 30px;
+                >#demo1{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-family: ff ;
+                    font-size: 25px;
+                    font-weight: 300;
+                    /* border: 1px solid red; */
+                }
+            }
+            >.time{
+                width: 100%;
+                height: 22%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                padding-left: 20px;
+                >#demo2{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-family: ff;
+                    font-size: 100px;
+                    font-weight: 300;
+                    /* border: 1px solid teal; */
+                }
+            }
+            >.date{
+                width: 100%;
+                height: 8%;
+                padding-left: 20px;
+                >#demo3{
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    font-family: ff;
+                    font-size: 20px;
+                    font-weight: 600;
+                    letter-spacing: 2px;
+                    /* border: 1px solid yellowgreen; */
+                }
+            }
+            >.descBox{
+                width: 100%;
+                height: 13%;
+                display: flex;
+                align-items: center;
+                align-content: flex-start;
+                flex-wrap: wrap;
+                padding-left: 20px;
+                /* border: 1px solid white; */
+                position: relative;
+                margin-top: 85px;
+                >h3{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    font-family: ff;
+                    font-weight: 300;
+                    >a{
+                        text-decoration: none;
+                        color: inherit;
+                        position: relative;
+                        font-weight: 600;
+                        /* &::before{
+                            content: '';
+                            width: 0%;
+                            height: 1px;
+                            position: absolute;
+                            left: 0;
+                            top: 17px;
+                            background-color: #ffffff74;
+                            transition: all 0.2s linear;
+                        }
+                        &:hover::before{
+                            width: 100%;
+                        } */
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                >h4{
+                    width: 100%;
+                    height: 50%;
+                    display: flex;
+                    align-items: center;
+                    font-size: 12px;
+                    font-family: ff;
+                    font-weight: 300;
+                    
+                    >a{
+                        text-decoration: none;
+                        color: inherit;
+                        position: relative;
+                        font-weight: 600;
+                        /* &::before{
+                            content: '';
+                            width: 0%;
+                            height: 1px;
+                            position: absolute;
+                            left: 0;
+                            top: 17px;
+                            background-color: #ffffff74;
+                            transition: all 0.2s linear;
+                        }
+                        &:hover::before{
+                            width: 100%;
+                        } */
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+                >.myTag{
+                    position: absolute;
+                    left:136px;
+                    top: 59px;
+                    width: 30px;
+                    height: 90px;
+                    /* border: 1px solid white; */
+                    display: flex;
+                    flex-wrap: wrap;
+                    transition: all 0.6s linear;                    opacity: 0;
+                    visibility: hidden;
+                    >a{
+                        width: 100%;
+                        height: 30px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        /* border: 1px solid green; */
+
+                        >svg{
+                            width: 20px;
+                            height: 20px;
+                            fill: #fff;
+                            transition: 0.1s linear;
+                        }
+                        &:nth-of-type(1){
+                            >svg{
+
+                                &:hover{
+                                    fill: orangered!important ;
+                                }
+                            }
+                        }
+                        &:nth-of-type(2){
+                            >svg{
+                                
+                                &:hover{
+                                    fill: #C13584!important ;
+                                }
+                            }                            
+                        }
+                        &:nth-of-type(3){
+                            >svg{
+                                
+                                &:hover{
+                                    fill: rgb(37, 37, 252)!important ;
+                                }
+                            }                            
+                        }
+                    }
+                }
+            }
+        }
+        >.rightBox{
+            /* backdrop-filter: blur(5px); */
+            /* border-top-right-radius: 15px; */
+            /* border-bottom-right-radius: 15px; */
+            width: 45%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid red; */
+        }
+    }
+}
+/* /////////////////time///////////////////// */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* /////////////////time///////////////////// */
+
+
+
+
+
+
+
+
+
+/* /////////CLOCK////////// */
+
+
+
+
+
+
+.clockbox,
+#clock {
+    scale: 0.9;
+    width: 100%;
+}
+.circle {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 6;
+    stroke-miterlimit: 10;
+}
+.mid-circle {
+    fill: #fff;
+}
+.hour-marks {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+.hour-arm {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 15;
+    stroke-miterlimit: 10;
+}
+.minute-arm {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 9;
+    stroke-miterlimit: 10;
+}
+.second-arm {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 4;
+    stroke-miterlimit: 10;
+}
+.sizing-box {
+    fill: none;
+}
+#hour,
+#minute,
+#second {
+    transform-origin: 300px 300px;
+    transition: transform .5s ease-in-out;
+}
+
+
+
+
+/* /////////CLOCK////////// */
